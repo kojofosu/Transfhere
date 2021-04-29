@@ -11,10 +11,11 @@ import java.nio.channels.FileChannel
  * @author Kojo Fosu Bempa Edue
  */
 class Copy {
-    private lateinit var sourceChannel : FileChannel
-    private lateinit var destinationChannel: FileChannel
 
-
+    /**
+     * Builder
+     * @param context
+     */
     class Builder (context: Context) {
         private val TAG = Copy::class.qualifiedName
 
@@ -45,7 +46,7 @@ class Copy {
         }
 
         /**
-         * Path file will be moved from
+         * Path where file will be moved from
          */
         fun sourcePath(sourcePath: String) : Builder{
             Log.d(TAG, "sourcePath: $sourcePath")
@@ -54,7 +55,7 @@ class Copy {
         }
 
         /**
-         * Path file will be moved to
+         * Path where file will be moved to
          */
         fun destinationPath(destinationPath: String) : Builder{
             Log.d(TAG, "destinationPath: $destinationPath")
