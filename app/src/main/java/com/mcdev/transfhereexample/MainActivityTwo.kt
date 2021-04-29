@@ -4,14 +4,12 @@ import android.content.Context
 import android.database.Cursor
 import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.mcdev.transfhere.Copy
 import com.mcdev.transfhere.utils.TransfhereUtils
 import kotlinx.android.synthetic.main.activity_main_two.*
-import java.io.File
 
 
 class MainActivityTwo : AppCompatActivity() {
@@ -41,12 +39,12 @@ class MainActivityTwo : AppCompatActivity() {
         Log.d("TAG", "moveFiles: the path : $lll")
 
 
-        Copy.Builder(this)
+        Copy.with(this)
             .fileNameWithExtension(ppp!!)
             .sourcePath(sourcePath = lll!!)
             .destinationPath(destinationPath = aaa.path)
             .createDestinationDirIfNotExist()
-            .build()
+            .copy()
     }
 
     private fun getRealPathFromURI(contentURI: Uri): String? {
