@@ -8,6 +8,7 @@ import android.provider.MediaStore
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.mcdev.transfhere.Copy
+import com.mcdev.transfhere.CopyBuilder
 import com.mcdev.transfhere.utils.TransfhereUtils
 import kotlinx.android.synthetic.main.activity_main_two.*
 
