@@ -3,6 +3,16 @@ Transfer files in android
 
 [![License: MIT](https://shields.io/github/license/kojofosu/Transfhere?style=for-the-badge&logo=appveyor)](https://opensource.org/licenses/MIT)
 
+
+
+### Prerequisites
+
+- Request `STORAGE` permissions. Read more [Android Permissions](https://developer.android.com/guide/topics/permissions/overview) and [Data and File storage](https://developer.android.com/training/data-storage) .
+
+
+
+
+
 ### License
 
 ```

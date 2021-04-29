@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -10,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.mcdev.transfhereexample"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
@@ -42,4 +43,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Transfhere
+    implementation project(':Transfhere')
 }
