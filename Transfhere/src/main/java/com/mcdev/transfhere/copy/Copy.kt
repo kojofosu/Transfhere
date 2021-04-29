@@ -1,11 +1,6 @@
-package com.mcdev.transfhere
+package com.mcdev.transfhere.copy
 
 import android.content.Context
-import android.util.Log
-import java.io.File
-import java.io.FileInputStream
-import java.io.FileOutputStream
-import java.nio.channels.FileChannel
 
 /**
  * @author Kojo Fosu Bempa Edue
@@ -18,7 +13,7 @@ class Copy {
          * @param context context
          * @return CopyBuilder
          */
-        fun with(context: Context) : CopyBuilder{
+        fun with(context: Context) : CopyBuilder {
             return CopyBuilder(context)
         }
     }

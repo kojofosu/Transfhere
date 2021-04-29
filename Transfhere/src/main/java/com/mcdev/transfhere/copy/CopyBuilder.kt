@@ -1,4 +1,4 @@
-package com.mcdev.transfhere
+package com.mcdev.transfhere.copy
 
 import android.content.Context
 import android.util.Log
@@ -39,7 +39,7 @@ class CopyBuilder(context: Context) {
     /**
      * Path where file will be moved from
      */
-    fun sourcePath(sourcePath: String) : CopyBuilder{
+    fun sourcePath(sourcePath: String) : CopyBuilder {
         Log.d(TAG, "sourcePath: $sourcePath")
         this.sourcePath = sourcePath
         return this
