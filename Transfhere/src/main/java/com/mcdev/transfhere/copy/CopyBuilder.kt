@@ -7,6 +7,9 @@ import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.nio.channels.FileChannel
 
+/**
+ * @author Kojo Fosu Bempa Edue
+ */
 class CopyBuilder(context: Context) {
     private val TAG = Copy::class.qualifiedName
 
@@ -18,7 +21,10 @@ class CopyBuilder(context: Context) {
     private lateinit var destinationChannel: FileChannel
 
     /**
+     * File name with no extension
+     * @author Kojo Fosu Bempa Edue
      * @param fileName name of the file without its extension
+     * @return CopyBuilder
      */
     fun filename(fileName: String) : CopyBuilder {
         Log.d(TAG, "filename: $fileName")
@@ -28,7 +34,9 @@ class CopyBuilder(context: Context) {
 
     /**
      * File name with its extension
+     * @author Kojo Fosu Bempa Edue
      * @param fileNameWithExtension
+     * @return CopyBuilder
      */
     fun fileNameWithExtension(fileNameWithExtension: String) : CopyBuilder {
         Log.d(TAG, "fileNameWithExtension: $fileNameWithExtension")
@@ -38,6 +46,9 @@ class CopyBuilder(context: Context) {
 
     /**
      * Path where file will be moved from
+     * @author Kojo Fosu Bempa Edue
+     * @param sourcePath the path to where file will be copied from
+     * @return CopyBuilder
      */
     fun sourcePath(sourcePath: String) : CopyBuilder {
         Log.d(TAG, "sourcePath: $sourcePath")
@@ -47,6 +58,9 @@ class CopyBuilder(context: Context) {
 
     /**
      * Path where file will be moved to
+     * @author Kojo Fosu Bempa Edue
+     * @param destinationPath the path to where file will be copied to
+     * @return CopyBuilder
      */
     fun destinationPath(destinationPath: String) : CopyBuilder {
         Log.d(TAG, "destinationPath: $destinationPath")
@@ -56,6 +70,8 @@ class CopyBuilder(context: Context) {
 
     /**
      * Create directory if it does not exist.
+     * @author Kojo Fosu Bempa Edue
+     * @return CopyBuilder
      */
     fun createDestinationDirIfNotExist() : CopyBuilder {
         val fileDestPath = File(destinationPath) //set file destination. ie. the destination path where the file will end up in
@@ -67,7 +83,8 @@ class CopyBuilder(context: Context) {
 
 
     /**
-     * start copy
+     * Start copy
+     * @author Kojo Fosu Bempa Edue
      */
     fun copy(){
         val source = File(sourcePath)
