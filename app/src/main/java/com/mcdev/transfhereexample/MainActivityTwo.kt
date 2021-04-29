@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.mcdev.transfhere.Copy
+import com.mcdev.transfhere.utils.TransfhereUtils
 import kotlinx.android.synthetic.main.activity_main_two.*
 import java.io.File
 
@@ -29,7 +30,7 @@ class MainActivityTwo : AppCompatActivity() {
 
     fun moveFiles(uri: Uri) {
 
-        var aaa = File(Environment.getExternalStorageDirectory() , "testtest")
+        var aaa = TransfhereUtils.createExternalStorageDir("testTestTwo")
         Log.d("TAG", "moveFiles: aaa2 : ${aaa.path}")
 
         var ppp = getRealPathFromURI(uri)
