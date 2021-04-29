@@ -12,6 +12,7 @@ class TransfhereUtils {
          * @sample TransfhereUtils.createExternalStorageDir("sample/test")
          * @return java.io.File
          */
+        @Deprecated(message = "This will be replaced with a better alternative",replaceWith = ReplaceWith(expression = "",imports = []), level = DeprecationLevel.WARNING,)
         fun createExternalStorageDir(childDir: String) : File {
             return File(Environment.getExternalStorageDirectory(), childDir)
         }

@@ -14,7 +14,7 @@ class Copy {
 
     companion object{
         /**
-         * @author Kojo Fosu
+         * @author Kojo Fosu Bempa Edue
          * @param context context
          * @return CopyBuilder
          */
