@@ -1,7 +1,7 @@
 # Transfhere
 Transfer files in android
 
-[![License: MIT](https://shields.io/github/license/kojofosu/Transfhere?style=for-the-badge&logo=appveyor)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://shields.io/github/license/kojofosu/Transfhere?style=for-the-badge&logo=open-source-initiative)](https://opensource.org/licenses/MIT)
 
 
 
